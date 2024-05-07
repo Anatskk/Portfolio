@@ -1,0 +1,474 @@
+body{
+    font-family: "Lato", sans-serif;
+    
+}
+
+.menuOculto{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden ;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menuOculto a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #888;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover{
+    color: #fff;
+}
+
+.btnFechar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+.btnAbrir{
+    font-size: 50px;
+    cursor: pointer;
+    position: fixed;
+}
+
+#principal{
+    padding: 16px;
+    transition: margin-left 0.5s;
+}
+
+@media screen and(max-height: 450px){
+    .menuOculto{padding-top: 15px;}
+    .menuOculto a{font-size: 18;}
+
+}
+
+:root{
+    --color-neutral-0: #111;
+    --color-neutral-10: #888;
+    --color-neutral-30: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+
+
+footer{
+    width: 100%;
+    columns: var(--color-neutral-30);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.footerLink{
+    text-decoration: none;
+
+}
+
+#footerContent{
+    background-color: var(--color-neutral-0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#footerContacts h2{
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+}
+
+#footerSocialMidia{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+#footerSocialMidia .footerLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-30);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin: 0 14px; 
+}
+
+#footerSocialMidia .footerLink i{
+    font-size: 1.7rem; 
+    margin: 0; 
+    line-height: 1;
+}
+
+#footerSocialMidia .footerLink:hover{
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+#zapzap{
+    background-color: #888;
+}
+
+#instagram{
+    background-color: #888;
+}
+
+#tiktok{
+    background-color: #888;
+}
+
+#twitter{
+    background-color: #888;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    color: var(--color-neutral-10);
+    background-color: #000;
+    font-size: 0.9rem;  
+    padding: 1.0rem;
+    font-weight: 100px;
+}
+
+.containerFlex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    max-width: 1200px;
+    margin-top: 150px;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center; 
+    align-items: center; 
+    grid-template-areas: 
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item item item"
+   "item3 item3 item3"
+   "item11 item11 item11"
+   "item11 item11 item11"
+   "item12 item12 item12" ;
+}  
+
+img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#item{
+    width: 353px;
+    height: 500px;
+    background-color: #333;
+    border-radius: 30px;
+    transition: filter 0.3s ease;
+    grid-area: "item";
+}
+
+#item:hover{
+    filter: brightness(40%); 
+}
+
+#item3{
+    width: 353px;
+    height: 480px;
+    transition: filter 0.3s ease;
+    background-color: #333;
+    border-radius: 30px;
+    grid-area: "item3";
+}
+
+#item3:hover{
+    filter: brightness(40%); 
+}
+
+#item11{
+    width: 353px;
+    height: 423px;
+    background-color: #333;
+    border-radius: 30px;
+    transition: filter 0.3s ease;
+    grid-area: "item10";
+    grid-row: "item10";
+
+}
+
+#item11:hover{
+    filter: brightness(40%); 
+}
+
+#item12{
+    width: 350px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 30px;
+    transition: filter 0.3s ease;
+    grid-area: "item11";
+    grid-row: "item1";
+    margin-bottom: 10px;
+
+}
+
+#item12:hover{
+    filter: brightness(40%); 
+}
+
+
+
+@media (max-width: 745px){
+    #item{
+        width: 176px;
+        height: 250px;
+
+    }
+    #item3{
+        width: 176px;
+        height: 240px;
+    }
+    #item11{
+        width: 176px;
+        height: 211px;
+    }
+    #item12{
+        width: 175px;
+        height: 175px;
+    }
+}
+
+.essea{
+    width: 100%;
+}
+
+
+.arrow{
+    font-size: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    color: #000;
+    margin-right: 5%;
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+.arrow:hover{
+    transform: scale(0.9);
+
+}
+
+.arrowdois{
+    font-size: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: baseline;
+    color: #000;
+    margin-left: 5%;
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+.arrowdois:hover{
+    transform: scale(0.9);
+
+}
+
+.conarg {
+    width: 100%;
+}
+
+
+.arrgtur {
+    position: absolute;
+    left: 50%;
+    width: 100px; 
+    height: auto; 
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+}
+
+
+@media (max-width: 400px) {
+    #footerContacts h2 {
+        font-size: 18px ; 
+        align-items: center;
+        text-align: center; /* Centralizando horizontalmente */
+        line-height: 1.5; /* Ajustando a altura da linha para centralizar verticalmente */
+        margin: 0; /* Removendo as margens padrão para evitar espaços extras */
+        margin-top: 10%;
+        display: flex; /* Usando flex para centralizar verticalmente */
+        align-items: center; /* Centralizando verticalmente */
+        justify-content: center;
+    }
+
+    #footerSocialMidia .footerLink {
+        margin: 0 5px; /* Ajuste o valor conforme necessário para reduzir o espaçamento */
+    }
+}
+
+@media (max-width: 305px) {
+    #footerContacts h2 {
+        font-size: 15spx ; 
+        align-items: center;
+        text-align: center; /* Centralizando horizontalmente */
+        line-height: 1.5; /* Ajustando a altura da linha para centralizar verticalmente */
+        margin: 0; /* Removendo as margens padrão para evitar espaços extras */
+        margin-top: 5%;
+        display: flex; /* Usando flex para centralizar verticalmente */
+        align-items: center; /* Centralizando verticalmente */
+        justify-content: center;
+    }
+
+    #footerSocialMidia .footerLink {
+        margin: 0 -1px; /* Ajuste o valor conforme necessário para reduzir o espaçamento */
+        align-items: center;
+        text-align: center; /* Centralizando horizontalmente */
+        line-height: 1.5; /* Ajustando a altura da linha para centralizar verticalmente */
+        display: flex; /* Usando flex para centralizar verticalmente */
+        align-items: center; /* Centralizando verticalmente */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 390px){
+
+    .flex{
+    grid-template-areas: 
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item3"
+        "item3"
+        "item3"
+        "item3"
+        "item11"
+        "item11"
+        "item11"
+        "item11"
+        "item11"
+        "item11"
+        "item12"
+        "item12"
+
+    }
+
+    .conarg {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 1118px){
+    .flex{
+    grid-template-areas: 
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item item"
+    "item3 item3"
+    "item3 item3"
+    "item11 item11"
+    "item11 item11"
+    "item11 item11"
+    "item12 item12"
+    
+     ;
+    }
+
+
+}
